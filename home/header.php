@@ -32,6 +32,9 @@
   <link rel="stylesheet" href="../assets/vendor/datatables/dataTables.bs5-custom.css">
   <link rel="stylesheet" href="../assets/vendor/calendar/css/custom.css">
   <link rel="stylesheet" href="../assets/vendor/calendar/css/main.min.css">
+
+  <link rel="stylesheet" href="../assets/vendor/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/vendor/owlcarousel/owl.theme.css">
 </head>
 
 <body>
@@ -81,7 +84,7 @@
       <!-- App brand starts -->
       <div class="app-brand ms-3">
         <a href="index.html" class="d-lg-block d-none">
-          <img src="../assets/images/logo-bg.png" class="logo" alt="MedFlex">
+          <img src="../assets/images/logo.svg" class="logo" alt="MedFlex">
         </a>
         <a href="index.html" class="d-lg-none d-md-block">
           <img src="../assets/images/logo-sm.svg" class="logo" alt="MedFlex">

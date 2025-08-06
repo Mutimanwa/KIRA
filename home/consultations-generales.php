@@ -58,18 +58,20 @@
                         </div>
                         <div class="col-md-3 ">
                             <select name="" class="form-select" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
+                                <option value="">Tous les services</option>
+                                <option value="">service 1</option>
+                                <option value="">service 1</option>
+                                <option value="">service 1</option>
+                                <option value="">service 1</option>
                             </select>
                         </div>
                         <div class="col-md-3 ">
                         <select name="" class="form-select" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
+                                <option value="">Tous les services</option>
+                                <option value="">service 1</option>
+                                <option value="">service 1</option>
+                                <option value="">service 1</option>
+                                <option value="">service 1</option>
                             </select>
                         </div>
                         <div class="col-md-2 ">
@@ -87,8 +89,8 @@
           <div class="col-12">
           <div class="card shadow-sm">
                 <div class="card-body p-0">
-                    <div class="table-responsive">
-                        <table class="table  align-middle mb-0">
+                    <div class="table-responsive ">
+                        <table class="table table-hover align-middle mb-0">
                             <thead class="table-light">
                                 <tr>
                                     <th>N° Consultation</th>
@@ -257,7 +259,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="card-footer bg-transparent">
+                <div class="card-footer bg-transparent border-top">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="text-muted">
                             Affichage <span class="fw-semibold">1-10</span> sur <span class="fw-semibold">47</span>

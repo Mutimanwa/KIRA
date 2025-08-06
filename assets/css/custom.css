@@ -162,3 +162,139 @@
     align-items: center;
     justify-content: center;
 }
+.team_members{
+  height:300px;
+}
+
+.teleconsultation-module {
+  --primary-color: #4361ee;
+  --secondary-color: #3f37c9;
+  --success-color: #4cc9f0;
+  --danger-color: #f72585;
+}
+
+/* Carrousel médecins */
+.doctors-carousel .doctor-card {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid #e9ecef;
+}
+.doctors-carousel .doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.doctor-avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  border: 3px solid white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.doctor-status {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.doctor-status.online { background: var(--success-color); }
+.doctor-status.offline { background: var(--danger-color); }
+
+/* Sélecteur de symptômes */
+.symptoms-tags {
+  min-height: 60px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.symptom-tag {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+}
+.symptom-tag .remove-tag {
+  margin-left: 5px;
+  cursor: pointer;
+  color: var(--danger-color);
+}
+.symptoms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+.symptom-btn {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: all 0.2s;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.symptom-btn:hover, .symptom-btn.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Zone de consultation */
+.consultation-container {
+  position: relative;
+  height: calc(100% - 70px);
+}
+.video-container {
+  position: relative;
+}
+.video-controls {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.chat-container {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+.chat-input {
+  border-top: 1px solid #e9ecef;
+  padding: 10px;
+}
+
+/* Animation texte */
+.animate-typing {
+  position: relative;
+}
+.animate-typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
