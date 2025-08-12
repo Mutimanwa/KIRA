@@ -13,7 +13,7 @@ include 'header.php';
                       <h6>Good Morning,</h6>
                       <h2>Mr. Calvin Dev</h2>
                       <h5>Your schedule today.</h5>
-                      <div class="mt-4 row gx-3">
+                      <div class="mt-4 row g-3">
                         <div class="col-xl-3 d-flex align-items-center">
                           <div class="icon-box lg bg-arctic rounded-3 me-3">
                             <i class="ri-surgical-mask-line fs-4"></i>

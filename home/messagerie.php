@@ -151,7 +151,7 @@
                 </div>
                 
                 <!-- Messages -->
-                <div class="flex-grow-1 chat-messages p-3 scroll550">
+                <div class="flex-grow-1 chat-messages p-3 ">
                     <div class="text-center my-3">
                         <span class="badge bg-light text-dark">Aujourd'hui</span>
                     </div>
@@ -226,14 +226,14 @@
                 <!-- Zone d'envoi -->
                 <div class="chat-input p-3 border-top bg-light">
                     <form class="message-form d-flex align-items-center">
-                        <button type="button" class="btn btn-sm btn-outline-secondary me-2" title="Pièce jointe">
-                            <i class="ri-attachment-line"></i>
-                        </button>
+                        <div type="button" class=" me-2" title="Pièce jointe">
+                            <i class="ri-attachment-line fs-3"></i>
+                        </div>
                         <div class="flex-grow-1 position-relative">
                             
                             <input type="text" class="form-control message-input" placeholder="Écrire un message..." autocomplete="off" data-emoji-input="" data-autosize="true">
-                            <div data-emoji-btn="" class=" btn-sm btn-link position-absolute end-0 top-50 translate-middle-y me-2" title="Émojis">
-                                <i class="ri-emotion-line"></i>
+                            <div data-emoji-btn="" class=" btn-sm btn-link position-absolute text-decoration-none end-0 top-50 translate-middle-y me-2" title="Émojis">
+                                <i class="ri-emotion-line fs-4"></i>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary ms-2" title="Envoyer">
