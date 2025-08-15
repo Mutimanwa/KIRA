@@ -1,12 +1,17 @@
-<?php require '../../includes/header.php' ; ?>
+<?php require 'header.php' ; ?>
           <!-- App body starts -->
           <div class="app-body">
             <!-- Row starts -->
             <div class="row gx-3">
               <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-header">
-                    <h5 class="card-title">Add Patient Details</h5>
+                  <div class="card-header bg-primary bg-opacity-10 d-flex justify-content-between aign-items-center ">
+                    <h5 class="card-title text-primary ">
+                      <i class="ri-user-add-line"></i>
+                      Ajouter un Nouveau patient</h5>
+                      <a href="patients-list.php" class="btn-outline-secondary btn">
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
                   </div>
                   <div class="card-body">
 
@@ -171,10 +176,10 @@
                       </div>
                       <div class="col-sm-12">
                         <div class="d-flex gap-2 justify-content-end">
-                          <a href="patients-list.html" type="button" class="btn btn-outline-secondary">
+                          <a href="patients-list.php" type="button" class="btn btn-outline-secondary">
                             Cancel
                           </a>
-                          <a href="patients-list.html" type="button" class="btn btn-primary">
+                          <a href="patients-list.php" type="button" class="btn btn-primary">
                             Create Patient Profile
                           </a>
                         </div>

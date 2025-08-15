@@ -8,7 +8,7 @@
                         <i class="ri-hospital-line"></i>
                         Consultations spécialistes
                     </h5>
-                    <a href="" class="btn btn-primary ms-auto">
+                    <a href="nouvel-consultation-specialiste.php" class="btn btn-primary ms-auto">
                         <i class="ri-add-line">Ajouter</i>
                     </a>
                 </div>

@@ -121,7 +121,6 @@ $(function () {
   });
 });
 
-
 /***********
 ***********
 ***********
@@ -146,7 +145,16 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl);
 });
 
-
-// teleconsultation 
-
-
+// consultation specialise
+// Initialisation du carrousel
+$(".doctors-carousel").owlCarousel({
+  loop: true,
+  margin: 15,
+  nav: true,
+  responsive: {
+    0: { items: 2 },
+    576: { items: 3 },
+    768: { items: 4 },
+    992: { items: 5 },
+  },
+});

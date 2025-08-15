@@ -7,18 +7,29 @@
   <title>TUNZA </title>
 
   <!-- Meta -->
-  <meta name="description" content="Hopital management Système">
-  <meta property="og:title" content="Admin Templates - Dashboard Templates">
   <meta property="og:description" content="Hopital management Système">
   <meta property="og:type" content="Website">
   <link rel="shortcut icon" href="../assets/images/favi.png">
+
+      <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0d6efd">
+    <meta name="description" content="Système complet de gestion hospitalière KIRA">
+    <link rel="manifest" href="/KIRA/manifest.json">
+    <link rel="apple-touch-icon" href="/KIRA/assets/images/favi.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="KIRA">
+
+        <!-- service worker -->
+    <script src="/KIRA/pwa-register.js"></script>
+    <script src="/KIRA/pwa-install-prompt.js"></script>
 
   <!-- *************
     ************ CSS Files *************
   ************* -->
   <link rel="stylesheet" href="../assets/fonts/remix/remixicon.css">
   <link rel="stylesheet" href="../assets/css/main.min.css">
-  <link rel="stylesheet"href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../assets/css/custom.css">
 
 
   <!-- *************
@@ -135,8 +146,8 @@
 
           <!-- Notifications dropdown starts -->
           <div class="dropdown">
-            <a class="position-relative icon-box rounded-circle sm d-flex align-items-center text-decoration-none" href="#" role="button"
-              data-bs-toggle="dropdown">
+            <a class="position-relative icon-box rounded-circle sm d-flex align-items-center text-decoration-none"
+              href="#" role="button" data-bs-toggle="dropdown">
               <i class="ri-notification-3-line text-white fs-5"></i>
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger pulse">
                 9+ <span class="visually-hidden">notifications</span>
@@ -192,20 +203,20 @@
               <hr class="dropdown-divider my-1">
             </li>
             <li>
-              <a class="dropdown-item d-flex align-items-center py-2" href="#">
+              <a class="dropdown-item d-flex align-items-center py-2" href="profils.php">
                 <i class="ri-user-line me-2"></i> Mon profil
               </a>
             </li>
             <li>
-              <a class="dropdown-item d-flex align-items-center py-2" href="#">
-                <i class="ri-settings-3-line me-2"></i> Paramètres 
+              <a class="dropdown-item d-flex align-items-center py-2" href="parametres.php">
+                <i class="ri-settings-3-line me-2"></i> Paramètres
               </a>
             </li>
             <li>
               <hr class="dropdown-divider my-1">
             </li>
             <li>
-              <a class="dropdown-item d-flex align-items-center py-2 text-danger" href="#">
+              <a class="dropdown-item d-flex align-items-center py-2 text-danger" href="index.html">
                 <i class="ri-logout-box-r-line me-2"></i> Déconnexion
               </a>
             </li>
@@ -252,8 +263,8 @@
             <li class="treeview">
               <a href="#"><i class="ri-user-line"></i><span class="menu-text">Dossier Patient</span></a>
               <ul class="treeview-menu">
-                <li><a href="admission.php">Admission</a></li>
                 <li><a href="patients-list.php">Liste des patients</a></li>
+                <li><a href="admission.php">Admission</a></li>
                 <li><a href="dossier-medical.php">Dossier médical complet</a></li>
                 <li><a href="historique-patient.php">Historique</a></li>
                 <li><a href="recherche-patient.php">Recherche avancée</a></li>

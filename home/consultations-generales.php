@@ -1,4 +1,5 @@
 <?php include_once 'header.php'; ?>
+
 <div class="app-body">
     <div class="row g-3">
         <!-- statistique -->
@@ -12,7 +13,7 @@
                   
                         <a href="" class="btn  btn-primary ms-auto">
                             <i class="ri-add-line"></i>
-                            Nouvelle
+                            Nouvelle 
                         </a>
                 </div>
                 <div class="card-body pt-3">

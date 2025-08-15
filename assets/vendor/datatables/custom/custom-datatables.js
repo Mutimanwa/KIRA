@@ -7,7 +7,7 @@ $(function () {
     ],
     language: {
       lengthMenu: "Affiche _MENU_ affichage par page",
-      info: "Showing Page _PAGE_ of _PAGES_",
+      info: "Page visible _PAGE_ sur _PAGES_",
     },
   });
 });

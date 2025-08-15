@@ -1,6 +1,24 @@
 <?php include 'header.php'; ?>
+<!-- App body starts -->
 <div class="app-body">
 
+    <!-- Ligne des buttons -->
+    <div class="row mb-3">
+        <div class="col-xl-12 col-sm-12">
+            <div class="card">
+                <div class="card-header bg-primary bg-opacity-10 d-flex align-items-center justify-content-between">
+                    <h5 class="card-title text-primary">
+                        <i class="ri-folder-2-line"></i>
+                        Dosier Medicale Electronic <span class="fw-bold"> [ DMC ] </span>
+                    </h5>
+                    <a href="" class="btn btn-primary ">
+                        <i class="ri-hotel-bed-line"></i>
+                        Admettre le patient
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Ligne d'en-tête -->
     <div class="row gx-3">
         <div class="col-sm-12">
@@ -57,7 +75,8 @@
                         </div>
                         <!-- Fin des statistiques -->
 
-                        <img src="../assets/images/patient4.png" class="img-7x rounded-circle ms-auto" alt="Profil patient">
+                        <img src="../assets/images/patient4.png" class="img-7x rounded-circle ms-auto"
+                            alt="Profil patient">
                     </div>
                 </div>
             </div>
@@ -212,6 +231,7 @@
                 </div>
             </div>
         </div>
+    </div>
     <!-- Fin de la ligne -->
 
     <!-- Ligne des consultations -->
@@ -236,16 +256,19 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="../assets/images/user1.png" class="img-3x rounded-2" alt="Photo médecin"> Dr. Hector
+                                            <img src="../assets/images/user1.png" class="img-3x rounded-2"
+                                                alt="Photo médecin"> Dr. Hector
                                         </td>
                                         <td>20/05/2024</td>
                                         <td>Dentiste</td>
                                         <td>
                                             <div class="d-inline-flex gap-1">
-                                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#viewReportsModal1">
+                                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewReportsModal1">
                                                     Voir rapports
                                                 </button>
-                                                <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Télécharger">
+                                                <button class="btn btn-info btn-sm" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" data-bs-title="Télécharger">
                                                     <i class="ri-file-download-line"></i>
                                                 </button>
                                             </div>
@@ -253,16 +276,19 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="../assets/images/user5.png" class="img-3x rounded-2" alt="Photo médecin"> Dr. Michel
+                                            <img src="../assets/images/user5.png" class="img-3x rounded-2"
+                                                alt="Photo médecin"> Dr. Michel
                                         </td>
                                         <td>20/05/2024</td>
                                         <td>Urologue</td>
                                         <td>
                                             <div class="d-inline-flex gap-1">
-                                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#viewReportsModal1">
+                                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#viewReportsModal1">
                                                     Voir rapports
                                                 </button>
-                                                <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Télécharger">
+                                                <button class="btn btn-info btn-sm" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" data-bs-title="Télécharger">
                                                     <i class="ri-file-download-line"></i>
                                                 </button>
                                             </div>
@@ -308,10 +334,12 @@
                                         <td>28/05/2024</td>
                                         <td>
                                             <div class="d-inline-flex gap-1">
-                                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delRow">
+                                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#delRow">
                                                     <i class="ri-delete-bin-line"></i>
                                                 </button>
-                                                <button class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Télécharger">
+                                                <button class="btn btn-info btn-sm" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" data-bs-title="Télécharger">
                                                     <i class="ri-file-download-line"></i>
                                                 </button>
                                             </div>
@@ -349,7 +377,8 @@
                 <div class="card-body">
                     <div class="scroll350">
                         <div class="text-center">
-                            <img class="img-fluid mb-3" src="../assets/images/reports.svg" style="width: 180px;" alt="Illustration pharmacie">
+                            <img class="img-fluid mb-3" src="../assets/images/reports.svg" style="width: 180px;"
+                                alt="Illustration pharmacie">
                             <h2>980€</h2>
                             <span class="d-block mb-1">Dépense moyenne</span>
                             <span class="d-block mb-2"><b>+20%</b> vs mois dernier</span>
@@ -368,35 +397,40 @@
                     <div class="scroll350">
                         <div class="activity-feed">
                             <div class="feed-item">
-                                <span class="feed-date pb-1" data-bs-toggle="tooltip" data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
+                                <span class="feed-date pb-1" data-bs-toggle="tooltip"
+                                    data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
                                 <div class="mb-1">
                                     <a href="#" class="text-primary">Dr. Janie Mcdonald</a> - nouvelle ordonnance.
                                 </div>
                                 <div class="mb-1">Médicament - <a href="#" class="text-danger">Amocvmillin</a></div>
                             </div>
                             <div class="feed-item">
-                                <span class="feed-date pb-1" data-bs-toggle="tooltip" data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
+                                <span class="feed-date pb-1" data-bs-toggle="tooltip"
+                                    data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
                                 <div class="mb-1">
                                     <a href="#" class="text-primary">Dr. Hector Banks</a> - rapport ajouté.
                                 </div>
                                 <div class="mb-1">Nom du rapport - <a href="#" class="text-danger">Lisymorpril</a></div>
                             </div>
                             <div class="feed-item">
-                                <span class="feed-date pb-1" data-bs-toggle="tooltip" data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
+                                <span class="feed-date pb-1" data-bs-toggle="tooltip"
+                                    data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
                                 <div class="mb-1">
                                     <a href="#" class="text-primary">Dr. Hector Banks</a> - rapport ajouté.
                                 </div>
                                 <div class="mb-1">Nom du rapport - <a href="#" class="text-danger">Lisymorpril</a></div>
                             </div>
                             <div class="feed-item">
-                                <span class="feed-date pb-1" data-bs-toggle="tooltip" data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
+                                <span class="feed-date pb-1" data-bs-toggle="tooltip"
+                                    data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
                                 <div class="mb-1">
                                     <a href="#" class="text-primary">Dr. Hector Banks</a> - rapport ajouté.
                                 </div>
                                 <div class="mb-1">Nom du rapport - <a href="#" class="text-danger">Lisymorpril</a></div>
                             </div>
                             <div class="feed-item">
-                                <span class="feed-date pb-1" data-bs-toggle="tooltip" data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
+                                <span class="feed-date pb-1" data-bs-toggle="tooltip"
+                                    data-bs-title="Aujourd'hui 05:32:35">Il y a 1 heure</span>
                                 <div class="mb-1">
                                     <a href="#" class="text-primary">Dr. Hector Banks</a> - rapport ajouté.
                                 </div>
@@ -409,6 +443,8 @@
         </div>
     </div>
     <!-- Fin de la ligne -->
+
+
 
     <!-- Modal Suppression -->
     <div class="modal fade" id="delRow" tabindex="-1" aria-labelledby="delRowLabel" aria-hidden="true">
@@ -423,7 +459,8 @@
                 </div>
                 <div class="modal-footer">
                     <div class="d-flex justify-content-end gap-2">
-                        <button class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Fermer">Non</button>
+                        <button class="btn btn-outline-secondary" data-bs-dismiss="modal"
+                            aria-label="Fermer">Non</button>
                         <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Fermer">Oui</button>
                     </div>
                 </div>
@@ -432,7 +469,8 @@
     </div>
 
     <!-- Modal Voir rapports -->
-    <div class="modal fade" id="viewReportsModal1" tabindex="-1" aria-labelledby="viewReportsModalLabel1" aria-hidden="true">
+    <div class="modal fade" id="viewReportsModal1" tabindex="-1" aria-labelledby="viewReportsModalLabel1"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
@@ -442,8 +480,10 @@
                 <div class="modal-body">
                     <div class="row g-3">
                         <div class="col-sm-2">
-                            <a href="#" class="d-flex flex-column bg-light p-2 rounded-2 text-center" data-bs-target="#viewReportsModal2" data-bs-toggle="modal">
-                                <img src="../assets/images/report.svg" class="img-fluid rounded-2" alt="Rapport médical">
+                            <a href="#" class="d-flex flex-column bg-light p-2 rounded-2 text-center"
+                                data-bs-target="#viewReportsModal2" data-bs-toggle="modal">
+                                <img src="../assets/images/report.svg" class="img-fluid rounded-2"
+                                    alt="Rapport médical">
                                 <h6 class="mt-3 mb-1 text-truncate">Rapport clinique</h6>
                                 <p class="m-0 small">10/05/2024</p>
                             </a>
@@ -455,13 +495,15 @@
     </div>
 
     <!-- Modal Détail rapport -->
-    <div class="modal fade" id="viewReportsModal2" tabindex="-1" aria-labelledby="viewReportsModalLabel2" aria-hidden="true">
+    <div class="modal fade" id="viewReportsModal2" tabindex="-1" aria-labelledby="viewReportsModalLabel2"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="viewReportsModalLabel2">
                         <div class="d-flex align-items-center">
-                            <a href="#!" class="btn btn-sm btn-outline-primary me-2" data-bs-target="#viewReportsModal1" data-bs-toggle="modal">
+                            <a href="#!" class="btn btn-sm btn-outline-primary me-2" data-bs-target="#viewReportsModal1"
+                                data-bs-toggle="modal">
                                 <i class="ri-arrow-left-wide-fill"></i>
                             </a>
                             Rapport clinique
@@ -473,7 +515,8 @@
                     <div class="row g-3">
                         <div class="col-sm-12">
                             <a href="#" class="d-flex flex-column bg-light p-2 rounded-2 text-center">
-                                <img src="../assets/images/report.svg" class="img-fluid rounded-2" alt="Rapport médical">
+                                <img src="../assets/images/report.svg" class="img-fluid rounded-2"
+                                    alt="Rapport médical">
                                 <h6 class="mt-3 mb-1 text-truncate">Rapport clinique complet</h6>
                                 <p class="m-0 small">10/05/2024</p>
                             </a>
