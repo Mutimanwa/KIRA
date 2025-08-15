@@ -47,12 +47,12 @@ class PWAInstaller {
     this.installBanner = document.createElement('div');
     this.installBanner.id = 'pwa-install-banner';
     this.installBanner.innerHTML = `
-      <div class="pwa-banner-content bg-primary">
-        <div class="pwa-header">
-          <img src="/KIRA/favicons/192.png" alt="KIRA" class="pwa-icon">
-          <div class="pwa-text">
-            <h4>Installer KIRA</h4>
-            <p>Ajoutez l'application à votre écran d'accueil</p>
+      <div class="pwa-banner-content bg-primary p-3 text-white rounded bg-opacity-6 shadow">
+        <div class="pwa-header d-flex align-items-center">
+          <img src="/KIRA/favicons/192.png" alt="TUNZA" class="pwa-icon border bg-light">
+          <div class="pwa-text ">
+            <h4 class="fw-bold">Installer TUNZA</h4>
+            <p class="">Ajoutez l'application à votre écran d'accueil</p>
           </div>
         </div>
         <p class="pwa-description">
@@ -73,10 +73,6 @@ class PWAInstaller {
         position: fixed;
         top: 20px;
         right: 37%;
-        color: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         z-index: 9999;
         max-width: 350px;
         animation: slideIn 0.3s ease-out;
@@ -85,13 +81,6 @@ class PWAInstaller {
       .pwa-banner-content {
         position: relative;
       }
-      
-      .pwa-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-      }
-      
       .pwa-icon {
         width: 48px;
         height: 48px;

@@ -1,27 +1,181 @@
 {
-  "name": "KIRA - Système de Gestion Hospitalière",
-  "short_name": "KIRA",
-  "description": "Système complet de gestion hospitalière moderne",
-  "start_url": "/KIRA/home/dashboard.php",
-  "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#0d6efd",
-  "background_color": "#ffffff",
-  "icons": [
-    {
-      "src": "/KIRA/assets/images/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/KIRA/assets/images/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "categories": ["medical", "health", "productivity"],
-  "lang": "fr-FR",
-  "scope": "/KIRA/"
+    "name": "TUNZA - Système de Gestion Hospitalière",
+    "short_name": "TUNZA",
+    "description": "Système complet de gestion hospitalière moderne",
+    "start_url": "/KIRA/home/dashboard.php",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#0d6efd",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "src": "favicons/16.png",
+            "sizes": "16x16",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/20.png",
+            "sizes": "20x20",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/29.png",
+            "sizes": "29x29",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/32.png",
+            "sizes": "32x32",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/40.png",
+            "sizes": "40x40",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/50.png",
+            "sizes": "50x50",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/57.png",
+            "sizes": "57x57",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/58.png",
+            "sizes": "58x58",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/60.png",
+            "sizes": "60x60",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/64.png",
+            "sizes": "64x64",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/72.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/76.png",
+            "sizes": "76x76",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/80.png",
+            "sizes": "80x80",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/87.png",
+            "sizes": "87x87",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/100.png",
+            "sizes": "100x100",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/114.png",
+            "sizes": "114x114",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/120.png",
+            "sizes": "120x120",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "favicons/144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any "
+        },
+        {
+            "src": "favicons/152.png",
+            "sizes": "152x152",
+            "type": "image/png",
+            "purpose": "any "
+        },
+        {
+            "src": "favicons/167.png",
+            "sizes": "167x167",
+            "type": "image/png",
+            "purpose": "any "
+        },
+        {
+            "src": "favicons/180.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any "
+        },
+        {
+            "src": "favicons/192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any "
+        },
+        {
+            "src": "favicons/256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any "
+        },
+        {
+            "src": "favicons/512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any "
+        },
+        {
+            "src": "favicons/1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "categories": [
+        "medical",
+        "health",
+        "productivity"
+    ],
+    "lang": "fr-FR",
+    "scope": "/KIRA/",
+    "screenshoot" : [
+        {
+            "src" : "favicons/desketop.png"
+        }
+    ]
+
 }
