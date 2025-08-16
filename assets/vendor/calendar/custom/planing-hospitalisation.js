@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       events: [
         {
           title: "5 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-01",
           textColor: "#116aef",
           color: "#ffffff",
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "9 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-02",
           textColor: "#116aef",
           color: "#ffffff",
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "12 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-03",
           textColor: "#116aef",
           color: "#ffffff",
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "9 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-04",
           textColor: "#116aef",
           color: "#ffffff",
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "7 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-07",
           textColor: "#116aef",
           color: "#ffffff",
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "16 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-06",
           textColor: "#116aef",
           color: "#ffffff",
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "9 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-07",
           textColor: "#116aef",
           color: "#ffffff",
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "13 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-08",
           textColor: "#116aef",
           color: "#ffffff",
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "20 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-09",
           textColor: "#116aef",
           color: "#ffffff",
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "11 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-10",
           textColor: "#116aef",
           color: "#ffffff",
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "3 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-11",
           textColor: "#116aef",
           color: "#ffffff",
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "6 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-12",
           textColor: "#116aef",
           color: "#ffffff",
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "18 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-13",
           textColor: "#116aef",
           color: "#ffffff",
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "4 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-14",
           textColor: "#116aef",
           color: "#ffffff",
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "5 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-15",
           textColor: "#116aef",
           color: "#ffffff",
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "5 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-16",
           textColor: "#116aef",
           color: "#ffffff",
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "9 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-17",
           textColor: "#116aef",
           color: "#ffffff",
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "12 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-18",
           textColor: "#116aef",
           color: "#ffffff",
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "9 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-19",
           textColor: "#116aef",
           color: "#ffffff",
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "7 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-20",
           textColor: "#116aef",
           color: "#ffffff",
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "16 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-21",
           textColor: "#116aef",
           color: "#ffffff",
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "9 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-22",
           textColor: "#116aef",
           color: "#ffffff",
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "13 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-23",
           textColor: "#116aef",
           color: "#ffffff",
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "20 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-24",
           textColor: "#116aef",
           color: "#ffffff",
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "11 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-25",
           textColor: "#116aef",
           color: "#ffffff",
@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "3 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-26",
           textColor: "#116aef",
           color: "#ffffff",
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "6 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-27",
           textColor: "#116aef",
           color: "#ffffff",
@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "18 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-28",
           textColor: "#116aef",
           color: "#ffffff",
@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "4 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-29",
           textColor: "#116aef",
           color: "#ffffff",
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "5 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-30",
           textColor: "#116aef",
           color: "#ffffff",
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
           title: "8 Hospitalisation",
-          url: "appointments-list.php",
+          url: "hospitalisation-list.php",
           start: "2025-07-31",
           textColor: "#116aef",
           color: "#ffffff",

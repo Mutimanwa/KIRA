@@ -86,6 +86,7 @@ const urlsToCache = [
    '/KIRA/assets/images/bg.jpg',
    '/KIRA/assets/images/doctor.svg',
    '/KIRA/assets/images/logo.png',
+   '/KIRA/assets/images/favi.png',
    '/KIRA/assets/images/login-bg.png',
   
   // Fonts

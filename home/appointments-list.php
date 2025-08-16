@@ -6,16 +6,20 @@
             <!-- Row starts -->
             <div class="row gx-3">
               <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-header d-flex align-items-center justify-content-between">
-                    <h5 class="card-title">Applointments List</h5>
-                    <a href="book-appointment.php" class="btn btn-primary ms-auto">Book Appointment</a>
+                <div class="card ">
+                  <div class="card-header bg-primary bg-opacity-10 d-flex align-items-center justify-content-between">
+                    <h5 class="card-title text-primary">
+                     <i class="ri-calendar-schedule-line"></i>
+                       List des rendez-vous</h5>
+                    <a href="book-appointment.php" class="btn btn-primary ms-auto">
+                      <i class="ri-add-line"></i>
+                      Nouveau rendez-vous</a>
                   </div>
                   <div class="card-body">
 
                     <!-- Table starts -->
                     <div class="table-responsive">
-                      <table id="searchPagin" class="table m-0 align-middle">
+                      <table id="basicExample" class="table table-hover m-0 align-middle">
                         <thead>
                           <tr>
                             <th>#</th>

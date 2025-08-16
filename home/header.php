@@ -21,7 +21,7 @@
     <meta name="apple-mobile-web-app-title" content="KIRA">
 
         <!-- service worker -->
-    <script src="/KIRA/pwa-register.js"></script>
+    <!-- <script src="/KIRA/pwa-register.js"></script> -->
     <!-- <script src="/KIRA/pwa-install-prompt.js"></script> -->
 
   <!-- *************
@@ -93,12 +93,13 @@
       <!-- Toggle buttons ends -->
 
       <!-- App brand starts -->
-      <div class="app-brand ms-3">
-        <a href="index.html" class="d-lg-block d-none">
-          <img src="../assets/images/logo.svg" class="logo" alt="MedFlex">
+      <div class="app-brand ms-2">
+        <a href="index.html" class="d-lg-flex d-none align-items-center">
+          <img src="../assets/images/favi.png" class="logo bg-white rounded-circle" height="38px" alt="TUNZA">
+          <span class="lead fw-bold text-white fs-3 ms-1">TUNZA</span>
         </a>
         <a href="index.html" class="d-lg-none d-md-block">
-          <img src="../assets/images/logo-sm.svg" class="logo" alt="MedFlex">
+          <img src="../assets/images/favi.png" class="logo bg-white rounded-circle" height="33px" alt="TUNZA">
         </a>
       </div>
       <!-- App brand ends -->
@@ -450,7 +451,8 @@
             <li class="treeview">
               <a href="#"><i class="ri-hotel-bed-line"></i><span class="menu-text">Gestion des Lits</span></a>
               <ul class="treeview-menu">
-                <li><a href="occupation-lits.php">Occupation</a></li>
+                <li><a href="gestion-chambres.php">Gestion de chambres</a></li>
+                <li><a href="gestion-lits.php">Gestion de lits</a></li>
                 <li><a href="disponibilite-lits.php">Disponibilité</a></li>
                 <li><a href="affectation-lits.php">Affectation</a></li>
               </ul>

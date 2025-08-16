@@ -5,12 +5,12 @@
         <div class="col-12">
             <div class="card border-0 shadow-sm">
                 <!-- En-tête avec navigation -->
-                <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center py-3">
-                    <h5 class="card-title mb-0">
-                        <i class="ri-calendar-todo-line me-2 text-primary"></i> Gestion du Planning Hospitalier
+                <div class="card-header bg-primary bg-opacity-10 border-0 d-flex justify-content-between align-items-center py-3">
+                    <h5 class="card-title mb-0 text-primary">
+                        <i class="ri-calendar-todo-line me-2 "></i> Gestion du Planning Hospitalier
                     </h5>
                     <div class="d-flex gap-2">
-                        <button class="btn btn-sm btn-primary" id="addSchedule">
+                        <button class="btn btn-sm btn-primary" id="addSchedule" data-bs-toggle="modal" data-bs-target="#eventModal">
                             <i class="ri-add-line me-1"></i> Nouveau créneau
                         </button>
                     </div>

@@ -30,7 +30,7 @@ $(function () {
       [10, 25, 50, "All"],
     ],
     language: {
-      lengthMenu: "Display _MENU_ Records Per Page",
+      lengthMenu: "Affiche _MENU_ affichage par page",
     },
   });
   var table = $("#highlightRowColumn").DataTable();
@@ -49,7 +49,7 @@ $(function () {
       [10, 25, 50, "All"],
     ],
     language: {
-      lengthMenu: "Display _MENU_ Records Per Page",
+      lengthMenu: "Page visible _PAGE_ sur _PAGES_",
     },
     initComplete: function () {
       var api = this.api();
@@ -69,7 +69,7 @@ $(function () {
     ],
     searching: false,
     language: {
-      lengthMenu: "Display _MENU_ Records Per Page",
+      lengthMenu: "Page visible _PAGE_ sur _PAGES_",
       info: "Showing Page _PAGE_ of _PAGES_",
     },
   });
