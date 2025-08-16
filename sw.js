@@ -3,6 +3,7 @@ const urlsToCache = [
   // Pages principales
   '/KIRA/',
   '/KIRA/home/dashboard.php',
+  '/KIRA/home/page-not-found.php',
   '/KIRA/home/patients-list.php',
   '/KIRA/home/add-patient.php',
   '/KIRA/home/edit-patient.php',
@@ -140,7 +141,7 @@ self.addEventListener('fetch', (event) => {
           return response;
         }).catch(() => {
           // Fallback pour les requêtes hors ligne
-          return caches.match('/KIRA/home/dashboard.php');
+          return caches.match('/KIRA/home/page-not-found.php');
         });
       })
   );
