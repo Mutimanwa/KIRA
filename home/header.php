@@ -21,8 +21,9 @@
     <meta name="apple-mobile-web-app-title" content="KIRA">
 
         <!-- service worker -->
-    <!-- <script src="/KIRA/pwa-register.js"></script> -->
+    <script src="/KIRA/pwa-register.js"></script>
     <!-- <script src="/KIRA/pwa-install-prompt.js"></script> -->
+
 
   <!-- *************
     ************ CSS Files *************

@@ -158,3 +158,9 @@ $(function () {
     
   })
 })
+
+$(function () {
+  $("#rolePermission").DataTable({
+
+  });
+});
