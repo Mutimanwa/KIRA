@@ -40,6 +40,7 @@
 <script src="../assets/vendor/apex/custom/home/earnings.js"></script>
 <script src="../assets/vendor/apex/custom/home/gender-age.js"></script>
 <script src="../assets/vendor/apex/custom/home/claims.js"></script>
+<script src="../assets/vendor/apex/custom/audit/audit.js"></script>
 <script src="../assets/vendor/apex/apexcharts.min.js"></script>
 
 <script src="../assets/vendor/apex/custom/patients/healthActivity.js"></script>

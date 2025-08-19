@@ -7,6 +7,7 @@
     "orientation": "portrait",
     "theme_color": "#0d6efd",
     "background_color": "#ffffff",
+    "app-version" : "1.0",
     "icons": [
         {
             "src": "favicons/16.png",
