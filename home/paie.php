@@ -1,190 +1,192 @@
 <?php include 'header.php'; ?>
-          <!-- App body starts -->
-          <div class="app-body">
 
-            <!-- Row starts -->
-            <div class="row gx-3">
-              <div class="col-sm-12">
-                <div class="card mb-3">
-                  <div class="card-header">
-                    <h5 class="card-title">Payments by Month</h5>
-                  </div>
-                  <div class="card-body">
-
-                    <div class="chart-height-lg">
-                      <div id="payments"></div>
-                    </div>
-
-                  </div>
+<div class="app-body">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success bg-opacity-10 d-flex justify-content-between align-items-center">
+                    <h5 class="card-title text-success mb-0">
+                        <i class="ri-wallet-line me-2"></i>
+                        Gestion de la Paie
+                    </h5>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addPayrollModal">
+                        <i class="ri-add-line me-1"></i>
+                        Ajouter une fiche de paie
+                    </button>
                 </div>
-              </div>
+                <div class="card-body">
+                    <p class="text-muted mb-4">
+                        Suivez et gérez les salaires, les fiches de paie et les primes du personnel.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-sm-6 col-md-6 col-xl-4">
+                            <div class="d-flex align-items-center p-3 border rounded-3">
+                                <div class="icon-box lg bg-primary bg-opacity-10 text-primary rounded-4 me-3">
+                                    <i class="ri-line-chart-fill fs-3"></i>
+                                </div>
+                                <div>
+                                    <span class="text-muted">Masse salariale (mois)</span>
+                                    <h4 class="mb-0">€545,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-4">
+                            <div class="d-flex align-items-center p-3 border rounded-3">
+                                <div class="icon-box lg bg-info bg-opacity-10 text-info rounded-4 me-3">
+                                    <i class="ri-file-text-line fs-3"></i>
+                                </div>
+                                <div>
+                                    <span class="text-muted">Fiches de paie générées</span>
+                                    <h4 class="mb-0">210</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-4">
+                            <div class="d-flex align-items-center p-3 border rounded-3">
+                                <div class="icon-box lg bg-danger bg-opacity-10 text-danger rounded-4 me-3">
+                                    <i class="ri-error-warning-line fs-3"></i>
+                                </div>
+                                <div>
+                                    <span class="text-muted">Fiches en retard</span>
+                                    <h4 class="mb-0">0</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Row ends -->
+        </div>
+    </div>
 
-            <!-- Row start -->
-            <div class="row gx-3">
-              <div class="col-sm-12">
-                <!-- Card start -->
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="card-title">Summary</h5>
-                  </div>
-                  <div class="card-body">
-
-                    <!-- Table start -->
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success bg-opacity-10">
+                    <h5 class="card-title text-success mb-0">
+                        <i class="ri-file-list-3-line me-2"></i>
+                        Historique des fiches de paie
+                    </h5>
+                </div>
+                <div class="card-body">
                     <div class="table-responsive">
-                      <table id="customButtons" class="table m-0 align-middle">
-                        <thead>
-                          <tr>
-                            <th>#</th>
-                            <th>Invoice No.</th>
-                            <th>Patient Name</th>
-                            <th>Payment Type</th>
-                            <th>Paid Date</th>
-                            <th>Paid Amount</th>
-                            <th>Status</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>#000988</td>
-                            <td>Trugex Malin</td>
-                            <td>PayPal</td>
-                            <td>02/05/2024</td>
-                            <td>$2590.00</td>
-                            <td><span class="badge bg-success">Paid</span></td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>#000927</td>
-                            <td>Serge Baldwin</td>
-                            <td>Credit Card</td>
-                            <td>14/05/2024</td>
-                            <td>$3470.00</td>
-                            <td><span class="badge bg-success">Paid</span></td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>#000763</td>
-                            <td>Zenaida Frank</td>
-                            <td>Debit Card</td>
-                            <td>22/04/2024</td>
-                            <td>$7630.00</td>
-                            <td><span class="badge bg-danger">Unpaid</span></td>
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>#000876</td>
-                            <td>Henriq Agas</td>
-                            <td>Credit Card</td>
-                            <td>22/04/2024</td>
-                            <td>$7630.00</td>
-                            <td><span class="badge bg-success">Paid</span></td>
-                          </tr>
-                          <tr>
-                            <td>5</td>
-                            <td>#000839</td>
-                            <td>Kelly James</td>
-                            <td>Debit Card</td>
-                            <td>26/05/2024</td>
-                            <td>$2231.00</td>
-                            <td><span class="badge bg-success">Paid</span></td>
-                          </tr>
-                          <tr>
-                            <td>6</td>
-                            <td>#000786</td>
-                            <td>Carl Jampa</td>
-                            <td>PayPal</td>
-                            <td>17/05/2024</td>
-                            <td>$4532.00</td>
-                            <td><span class="badge bg-success">Paid</span></td>
-                          </tr>
-                          <tr>
-                            <td>7</td>
-                            <td>#000762</td>
-                            <td>Hameed Khan</td>
-                            <td>Credit Card</td>
-                            <td>23/06/2024</td>
-                            <td>$4539.00</td>
-                            <td><span class="badge bg-success">Paid</span></td>
-                          </tr>
-                          <tr>
-                            <td>8</td>
-                            <td>#000645</td>
-                            <td>Paul Miller</td>
-                            <td>Credit Card</td>
-                            <td>28/05/2024</td>
-                            <td>$6579.00</td>
-                            <td><span class="badge bg-danger">Unpaid</span></td>
-                          </tr>
-                          <tr>
-                            <td>9</td>
-                            <td>#000876</td>
-                            <td>Robert Francis</td>
-                            <td>Debit Card</td>
-                            <td>29/04/2024</td>
-                            <td>$3324.00</td>
-                            <td><span class="badge bg-success">Paid</span></td>
-                          </tr>
-                          <tr>
-                            <td>10</td>
-                            <td>#000767</td>
-                            <td>Edison Lee</td>
-                            <td>Credit Card</td>
-                            <td>14/05/2024</td>
-                            <td>$8719.00</td>
-                            <td><span class="badge bg-success">Paid</span></td>
-                          </tr>
-                          <tr>
-                            <td>11</td>
-                            <td>#000522</td>
-                            <td>Saul Lane</td>
-                            <td>Credit Card</td>
-                            <td>10/03/2024</td>
-                            <td>$6574.00</td>
-                            <td><span class="badge bg-success">Paid</span></td>
-                          </tr>
-                          <tr>
-                            <td>12</td>
-                            <td>#000382</td>
-                            <td>Antonia Larson</td>
-                            <td>Credit Card</td>
-                            <td>02/06/2024</td>
-                            <td>$3219.00</td>
-                            <td><span class="badge bg-danger">Unpaid</span></td>
-                          </tr>
-                          <tr>
-                            <td>13</td>
-                            <td>#000765</td>
-                            <td>Neal Werner</td>
-                            <td>Credit Card</td>
-                            <td>17/05/2024</td>
-                            <td>$3324.00</td>
-                            <td><span class="badge bg-danger">Unpaid</span></td>
-                          </tr>
-                          <tr>
-                            <td>14</td>
-                            <td>#000799</td>
-                            <td>Mariano Hooper</td>
-                            <td>PayPal</td>
-                            <td>22/06/2024</td>
-                            <td>$2134.00</td>
-                            <td><span class="badge bg-danger">Unpaid</span></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                        <table class="table table-hover align-middle m-0" id="basicExample">
+                            <thead>
+                                <tr>
+                                    <th>Employé</th>
+                                    <th>Mois</th>
+                                    <th>Salaire Brut</th>
+                                    <th>Salaire Net</th>
+                                    <th>Statut</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dr. Alex Johnson</td>
+                                    <td>Juillet 2025</td>
+                                    <td>€4,500.00</td>
+                                    <td>€3,800.00</td>
+                                    <td><span class="badge bg-success">Payé</span></td>
+                                    <td>
+                                        <div class="d-inline-flex gap-1">
+                                            <button class="btn btn-outline-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Télécharger">
+                                                <i class="ri-download-line"></i>
+                                            </button>
+                                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editPayrollModal" title="Modifier">
+                                                <i class="ri-edit-line"></i>
+                                            </button>
+                                            <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deletePayrollModal" title="Supprimer">
+                                                <i class="ri-delete-bin-line"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Marie Leblanc</td>
+                                    <td>Juillet 2025</td>
+                                    <td>€2,800.00</td>
+                                    <td>€2,350.00</td>
+                                    <td><span class="badge bg-success">Payé</span></td>
+                                    <td>
+                                        <div class="d-inline-flex gap-1">
+                                            <button class="btn btn-outline-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Télécharger">
+                                                <i class="ri-download-line"></i>
+                                            </button>
+                                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editPayrollModal" title="Modifier">
+                                                <i class="ri-edit-line"></i>
+                                            </button>
+                                            <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deletePayrollModal" title="Supprimer">
+                                                <i class="ri-delete-bin-line"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <!-- Table end -->
-
-                  </div>
                 </div>
-                <!-- Card end -->
-
-              </div>
             </div>
-            <!-- Row end -->
+        </div>
+    </div>
+</div>
 
-          </div>
-          <!-- App body ends -->
+<div class="modal fade" id="addPayrollModal" tabindex="-1" aria-labelledby="addPayrollModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addPayrollModalLabel">Ajouter une nouvelle fiche de paie</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="employeeName" class="form-label">Nom de l'employé</label>
+                            <input type="text" class="form-control" id="employeeName">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="payrollMonth" class="form-label">Mois de la paie</label>
+                            <input type="month" class="form-control" id="payrollMonth">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="grossSalary" class="form-label">Salaire Brut</label>
+                            <input type="number" class="form-control" id="grossSalary" step="0.01">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="netSalary" class="form-label">Salaire Net</label>
+                            <input type="number" class="form-control" id="netSalary" step="0.01">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="deductions" class="form-label">Déductions / Primes</label>
+                            <textarea class="form-control" id="deductions" rows="3" placeholder="Détails des déductions et primes..."></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-success">Enregistrer la fiche</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="deletePayrollModal" tabindex="-1" aria-labelledby="deletePayrollModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deletePayrollModalLabel">Confirmer la suppression</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Êtes-vous sûr de vouloir supprimer cette fiche de paie ? Cette action est irréversible.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-danger">Supprimer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php include 'footer.php'; ?>

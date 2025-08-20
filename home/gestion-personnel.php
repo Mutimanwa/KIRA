@@ -9,10 +9,10 @@
                         <i class="ri-user-settings-line me-2"></i>
                         Gestion du Personnel
                     </h5>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addStaffModal">
+                    <a href="add-personnel.php" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-templacement="top" title="ajouter un nouveau employe">
                         <i class="ri-user-add-line me-1"></i>
                         Ajouter un employé
-                    </button>
+                    </a>
                 </div>
                 <div class="card-body">
                     <p class="text-muted mb-4">

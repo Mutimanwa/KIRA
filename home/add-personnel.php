@@ -132,10 +132,10 @@
                       </div>
                       <div class="col-sm-12">
                         <div class="d-flex gap-2 justify-content-end">
-                          <a href="staff.html" class="btn btn-outline-secondary">
+                          <a href="gestion-personnel.php" class="btn btn-outline-secondary">
                             Cancel
                           </a>
-                          <a href="staff.html" class="btn btn-primary">
+                          <a href="gestion-personnel.php" class="btn btn-primary">
                             Add Staff Member
                           </a>
                         </div>
