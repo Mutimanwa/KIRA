@@ -4,8 +4,8 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-dark bg-opacity-10 d-flex justify-content-between align-items-center">
-                    <h5 class="card-title text-dark mb-0">
+                <div class="card-header bg-primary bg-opacity-10 d-flex justify-content-between align-items-center">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-clipboard-line me-2"></i>
                         Journal des Activités & Audit
                     </h5>
@@ -50,7 +50,7 @@
                     </form>
                     
                     <div class="table-responsive">
-                        <table class="table table-hover align-middle m-0" id="logs-table">
+                        <table class="table table-hover align-middle m-0" id="basicExample">
                             <thead>
                                 <tr>
                                     <th>ID</th>
@@ -97,5 +97,7 @@
         </div>
     </div>
 </div>
+
+
 
 <?php include 'footer.php'; ?>

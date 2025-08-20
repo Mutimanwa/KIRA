@@ -7,22 +7,22 @@
   <title>TUNZA </title>
 
   <!-- Meta -->
-  <meta property="og:description" content="Hopital management Système">
+  <meta property="og:description" content="Système complet de gestion hospitalière">
   <meta property="og:type" content="Website">
   <link rel="shortcut icon" href="../assets/images/favi.png">
 
-      <!-- PWA Meta Tags -->
-    <meta name="theme-color" content="#0d6efd">
-    <meta name="description" content="Système complet de gestion hospitalière KIRA">
-    <link rel="manifest" href="/KIRA/manifest.json">
-    <link rel="apple-touch-icon" href="/KIRA/assets/images/favi.png">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="KIRA">
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#0d6efd">
+  <meta name="description" content="Système complet de gestion hospitalière ">
+  <link rel="manifest" href="/KIRA/manifest.json">
+  <link rel="apple-touch-icon" href="/KIRA/assets/images/favi.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="TUNZA">
 
-        <!-- service worker -->
-    <script src="/KIRA/pwa-register.js"></script>
-    <!-- <script src="/KIRA/pwa-install-prompt.js"></script> -->
+  <!-- service worker -->
+  <script src="/KIRA/pwa-register.js"></script>
+  <!-- <script src="/KIRA/pwa-install-prompt.js"></script> -->
 
 
   <!-- *************
@@ -75,6 +75,43 @@
       </div>
     </div> -->
   <!-- Loading ends -->
+
+  <!-- Loader Overlay -->
+
+  <!-- Progress Bar -->
+<div id="page-progress"></div>
+
+<style>
+#page-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #22d3ee);
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.6);
+  z-index: 9999;
+  transition: width 0.4s ease;
+}
+</style>
+
+<script>
+document.onreadystatechange = function () {
+  if (document.readyState === "interactive") {
+    document.getElementById("page-progress").style.width = "60%";
+  }
+  if (document.readyState === "complete") {
+    document.getElementById("page-progress").style.width = "100%";
+    setTimeout(() => {
+      document.getElementById("page-progress").style.width = "0";
+    }, 500);
+  }
+};
+</script>
+
+
+  <!-- loader ends -->
+
 
   <!-- Page wrapper starts -->
   <div class="page-wrapper">

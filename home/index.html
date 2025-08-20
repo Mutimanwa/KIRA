@@ -1,41 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TUNZA</title>
 
     <!-- Meta -->
-    <meta name="description" content="Marketplace for Bootstrap Admin Dashboards">
-    <meta property="og:title" content="Admin Templates - Dashboard Templates">
-    <meta property="og:description" content="Marketplace for Bootstrap Admin Dashboards">
-    <meta property="og:type" content="Website">
-    <link rel="shortcut icon" href="../assets/images/favi.png">
+    <meta
+      name="description" content="Système complet de gestion hospitalière" />
+    <meta property="og:type" content="Website" />
+    <link rel="shortcut icon" href="../assets/images/favi.png" />
+
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#0d6efd">
+  <meta name="description" content="Système complet de gestion hospitalière ">
+  <link rel="manifest" href="/KIRA/manifest.json">
+  <link rel="apple-touch-icon" href="/KIRA/assets/images/favi.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="TUNZA"
 
     <!-- *************
 			************ CSS Files *************
 		************* -->
-    <link rel="stylesheet" href="../assets/fonts/remix/remixicon.css">
-    <link rel="stylesheet" href="../assets/css/main.min.css">
-
+    <link rel="stylesheet" href="../assets/fonts/remix/remixicon.css" />
+    <link rel="stylesheet" href="../assets/css/main.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
   </head>
 
-  <body class="login-bg">
+  <!-- Loader -->
+  <div
+    id="kira-loader"
+    style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-family: Arial, sans-serif;
+    "
+  >
+    <div class="loader-animation" style="text-align: center">
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/favi.png" alt="logo" width="50" />
+        <h2 style="margin-top: 15px; font-weight: bold; color: #007bff">
+          Tunza
+        </h2>
+      </div>
+      <div
+        class="spinner-border text-primary"
+        style="width: 2rem; height: 2rem"
+        role="status"
+      ></div>
+    </div>
+    <!-- Crédit -->
+    <div
+      style="
+        position: absolute;
+        bottom: 20px;
+        font-size: 13px;
+        color: #666;
+        opacity: 0.8;
+      "
+    >
+      Made by <strong style="color: #007bff">isopoMedia</strong>
+    </div>
+  </div>
 
+  <body class="login-bg">
     <!-- Container starts -->
     <div class="container">
-
       <!-- Auth wrapper starts -->
-      <div class="row py-4 ">
-
+      <div class="row py-4">
         <!-- Form starts -->
-        <form action="dashboard.php" >
-
-          <div class="col-sm-4 bg-light rounded-4 px-4 py-5 my-5 mx-auto shadow">
-            <a href="index.html" class="auth-logo mb-4 d-flex justify-content-center align-items-center">
-              <div class=" rounded-circle p-1 bg-white">
-                <img src="../assets/images/favi.png" alt="TUNZA">
+        <form action="dashboard.php">
+          <div
+            class="col-sm-4 bg-light rounded-4 px-4 py-5 my-5 mx-auto shadow"
+          >
+            <a
+              href="index.html"
+              class="auth-logo mb-4 d-flex justify-content-center align-items-center"
+            >
+              <div class="rounded-circle p-1 bg-white">
+                <img src="../assets/images/favi.png" alt="TUNZA" />
               </div>
               <span class="lead fw-bold text-primary fs-3 ms-1">TUNZA</span>
             </a>
@@ -43,39 +96,55 @@
             <h4 class="mb-4 text-center">Login</h4>
 
             <div class="mb-3">
-              <label class="form-label" for="email">Your email <span class="text-danger">*</span></label>
-              <input type="text" id="email" class="form-control " placeholder="Enter your email">
+              <label class="form-label" for="email"
+                >Your email <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
             </div>
 
             <div class="mb-2">
-              <label class="form-label" for="pwd">Your password <span class="text-danger">*</span></label>
+              <label class="form-label" for="pwd"
+                >Your password <span class="text-danger">*</span></label
+              >
               <div class="input-group">
-                <input type="password" id="pwd" class="form-control" placeholder="Enter password">
-                <button class="btn btn-outline-secondary" id="passwordToggle" type="button">
+                <input
+                  type="password"
+                  id="pwd"
+                  class="form-control"
+                  placeholder="Enter password"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  id="passwordToggle"
+                  type="button"
+                >
                   <i class="ri-eye-line text-primary"></i>
                 </button>
               </div>
             </div>
 
             <div class="d-flex justify-content-end mb-3">
-              <a href="forgot-password.html" class="text-decoration-underline">Forgot password?</a>
+              <a href="forgot-password.html" class="text-decoration-underline"
+                >Forgot password?</a
+              >
             </div>
 
             <div class="mb-3 d-grid gap-2">
               <button type="submit" class="btn btn-primary">Login</button>
             </div>
-
           </div>
-
         </form>
         <!-- Form ends -->
-
       </div>
       <!-- Auth wrapper ends -->
-
     </div>
     <!-- Container ends -->
-  
+     <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
   </body>
-
 </html>

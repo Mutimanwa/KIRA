@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barre de Progression - Style Facebook/GitHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .subtitle {
+            color: #6c757d;
+            font-size: 1.2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .progress-container {
+            width: 100%;
+            height: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            border-radius: 2px;
+            transition: width 0.4s ease;
+        }
+        
+        .style-facebook .progress-bar {
+            background: linear-gradient(90deg, #1877F2 0%, #0A7CFF 100%);
+        }
+        
+        .style-github .progress-bar {
+            background: linear-gradient(90deg, #24292e 0%, #3F4448 100%);
+        }
+        
+        .style-instagram .progress-bar {
+            background: linear-gradient(90deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%);
+        }
+        
+        .style-gradient .progress-bar {
+            background: linear-gradient(90deg, #007bff 0%, #6610f2 50%, #6f42c1 100%);
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-start {
+            background: #007bff;
+            color: white;
+        }
+        
+        .btn-start:hover {
+            background: #0069d9;
+        }
+        
+        .btn-reset {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .btn-reset:hover {
+            background: #5a6268;
+        }
+        
+        .percentage {
+            font-weight: 600;
+            color: #007bff;
+            margin-top: 10px;
+            text-align: right;
+        }
+        
+        .demo-area {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .demo-btn {
+            background: #28a745;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+        
+        .demo-btn:hover {
+            background: #218838;
+        }
+        
+        .global-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            z-index: 9999;
+            background: transparent;
+        }
+        
+        .global-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+            transition: width 0.4s ease;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #6c757d;
+        }
+        
+        @media (max-width: 768px) {
+            .controls {
+                flex-direction: column;
+            }
+            
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de progression globale (fixée en haut) -->
+    <div class="global-progress">
+        <div class="global-bar" id="global-progress-bar"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Barre de Progression Horizontale</h1>
+            <p class="subtitle">Style Facebook, GitHub et autres designs modernes</p>
+        </header>
+        
+        <div class="card style-facebook">
+            <div class="card-header">
+                <div class="card-icon">
+                    <i class="ri-facebook-fill"></i>
+                </div>
+                <h2 class="card-title">Style Facebook</h2>
+            </div>
+            <p>Barre de progression bleue similaire à celle utilisée par Facebook lors du chargement des images.</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-1" style="width: 30%"></div>
+            </div>
+            <div class="percentage" id="percentage-1">30%</div>
+            <div class="controls">
+                <button class="btn-start" onclick="startProgress('progress-1', 'percentage-1')">
+                    <i class="ri-play-line"></i> Démarrer
+                </button>
+                <button class="btn-reset" onclick="resetProgress('progress-1', 'percentage-1')">
+                    <i class="ri-restart-line"></i> Réinitialiser
+                </button>
+            </div>
+        </div>
+        
+        <div class="card style-github">
+            <div class="card-header">
+                <div class="card-icon">
+                    <i class="ri-github-fill"></i>
+                </div>
+                <h2 class="card-title">Style GitHub</h2>
+            </div>
+            <p>Barre de progression foncée inspirée par l'interface de GitHub pour les actions de repository.</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-2" style="width: 20%"></div>
+            </div>
+            <div class="percentage" id="percentage-2">20%</div>
+            <div class="controls">
+                <button class="btn-start" onclick="startProgress('progress-2', 'percentage-2')">
+                    <i class="ri-play-line"></i> Démarrer
+                </button>
+                <button class="btn-reset" onclick="resetProgress('progress-2', 'percentage-2')">
+                    <i class="ri-restart-line"></i> Réinitialiser
+                </button>
+            </div>
+        </div>
+        
+        <div class="card style-instagram">
+            <div class="card-header">
+                <div class="card-icon">
+                    <i class="ri-instagram-line"></i>
+                </div>
+                <h2 class="card-title">Style Instagram</h2>
+            </div>
+            <p>Barre de progression avec dégradé coloré inspiré des couleurs d'Instagram.</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-3" style="width: 40%"></div>
+            </div>
+            <div class="percentage" id="percentage-3">40%</div>
+            <div class="controls">
+                <button class="btn-start" onclick="startProgress('progress-3', 'percentage-3')">
+                    <i class="ri-play-line"></i> Démarrer
+                </button>
+                <button class="btn-reset" onclick="resetProgress('progress-3', 'percentage-3')">
+                    <i class="ri-restart-line"></i> Réinitialiser
+                </button>
+            </div>
+        </div>
+        
+        <div class="card style-gradient">
+            <div class="card-header">
+                <div class="card-icon">
+                    <i class="ri-palette-line"></i>
+                </div>
+                <h2 class="card-title">Style Dégradé</h2>
+            </div>
+            <p>Barre de progression avec un dégradé de couleurs modernes et dynamiques.</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-4" style="width: 10%"></div>
+            </div>
+            <div class="percentage" id="percentage-4">10%</div>
+            <div class="controls">
+                <button class="btn-start" onclick="startProgress('progress-4', 'percentage-4')">
+                    <i class="ri-play-line"></i> Démarrer
+                </button>
+                <button class="btn-reset" onclick="resetProgress('progress-4', 'percentage-4')">
+                    <i class="ri-restart-line"></i> Réinitialiser
+                </button>
+            </div>
+        </div>
+        
+        <div class="demo-area">
+            <h3>Démonstration avec barre globale</h3>
+            <p>Cliquez sur le bouton ci-dessous pour simuler le chargement d'une page avec la barre de progression en haut de l'écran.</p>
+            <button class="demo-btn" onclick="simulatePageLoad()">
+                <i class="ri-loader-4-line"></i> Simuler le chargement d'une page
+            </button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Inspiré des designs de Facebook, GitHub et autres applications modernes</p>
+    </footer>
+
+    <script>
+        // Fonction pour démarrer la progression
+        function startProgress(progressId, percentageId) {
+            const progressBar = document.getElementById(progressId);
+            const percentage = document.getElementById(percentageId);
+            let width = parseInt(progressBar.style.width);
+            
+            // Réinitialiser si déjà à 100%
+            if (width >= 100) {
+                progressBar.style.width = '0%';
+                percentage.textContent = '0%';
+                width = 0;
+            }
+            
+            const interval = setInterval(() => {
+                if (width >= 100) {
+                    clearInterval(interval);
+                } else {
+                    width += Math.random() * 5;
+                    if (width > 100) width = 100;
+                    progressBar.style.width = width + '%';
+                    percentage.textContent = Math.round(width) + '%';
+                }
+            }, 100);
+        }
+        
+        // Fonction pour réinitialiser la progression
+        function resetProgress(progressId, percentageId) {
+            const progressBar = document.getElementById(progressId);
+            const percentage = document.getElementById(percentageId);
+            progressBar.style.width = '0%';
+            percentage.textContent = '0%';
+        }
+        
+        // Simulation du chargement d'une page avec barre globale
+        function simulatePageLoad() {
+            const globalBar = document.getElementById('global-progress-bar');
+            globalBar.style.width = '0%';
+            
+            let width = 0;
+            const interval = setInterval(() => {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    // Laisser un peu de temps avant de cacher la barre
+                    setTimeout(() => {
+                        globalBar.style.width = '0%';
+                    }, 500);
+                } else {
+                    // Simulation de progression (ralentie vers la fin)
+                    if (width < 90) {
+                        width += Math.random() * 5;
+                    } else {
+                        width += Math.random() * 2;
+                    }
+                    
+                    if (width > 100) width = 100;
+                    globalBar.style.width = width + '%';
+                }
+            }, 100);
+        }
+        
+        // Démarrer automatiquement certaines barres au chargement de la page
+        window.addEventListener('load', () => {
+            startProgress('progress-1', 'percentage-1');
+            setTimeout(() => startProgress('progress-3', 'percentage-3'), 1000);
+        });
+    </script>
+</body>
+</html>

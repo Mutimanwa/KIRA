@@ -2,7 +2,7 @@
     "name": "TUNZA",
     "short_name": "TUNZA",
     "description": "Système complet de gestion hospitalière moderne",
-    "start_url": "/KIRA/home/dashboard.php",
+    "start_url": "/KIRA/home/",
     "display": "standalone",
     "orientation": "portrait",
     "theme_color": "#0d6efd",

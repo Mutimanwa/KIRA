@@ -1,57 +1,130 @@
 <?php include 'header.php'; ?>
 
 <div class="app-body">
-    <div class="container-fluid">
-        <!-- Header avec titre et boutons d'actions -->
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="mb-0">
-                <i class="fas fa-procedures me-2"></i>Suivi des Hospitalisations
-            </h2>
-            <div>
-                <button class="btn btn-primary me-2">
-                    <i class="fas fa-plus me-1"></i> Nouvelle admission
-                </button>
-                <button class="btn btn-outline-secondary">
-                    <i class="fas fa-filter me-1"></i> Filtres
-                </button>
-            </div>
-        </div>
 
-        <!-- Cartes de statistiques rapides -->
-        <div class="row mb-4">
-            <div class="col-md-3">
-                <div class="card stat-card bg-primary text-white">
-                    <div class="card-body">
-                        <h5 class="card-title">Patients actuels</h5>
-                        <h2 class="mb-0">42</h2>
-                        <small><i class="fas fa-bed me-1"></i> 78% occupation</small>
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary bg-opacity-10">
+                        <!-- Header avec titre et boutons d'actions -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0 text-primary">
+                                <i class="ri-hospital-line me-2"></i>Suivi des Hospitalisations
+                            </h5>
+                            <div>
+                                <button class="btn btn-primary me-2">
+                                    <i class="ri-add-line me-1"></i> Nouvelle admission
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="ri-filter-line me-1"></i> Filtres
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card stat-card bg-success text-white">
                     <div class="card-body">
-                        <h5 class="card-title">Sorties aujourd'hui</h5>
-                        <h2 class="mb-0">8</h2>
-                        <small><i class="fas fa-calendar-day me-1"></i> 15% des lits</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card stat-card bg-warning text-dark">
-                    <div class="card-body">
-                        <h5 class="card-title">Transferts en cours</h5>
-                        <h2 class="mb-0">3</h2>
-                        <small><i class="fas fa-exchange-alt me-1"></i> 2 urgences</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card stat-card bg-info text-white">
-                    <div class="card-body">
-                        <h5 class="card-title">Moyenne de séjour</h5>
-                        <h2 class="mb-0">4.2j</h2>
-                        <small><i class="fas fa-clock me-1"></i> -0.5j vs semaine dernière</small>
+                        <!-- Cartes de statistiques rapides -->
+                        <div class="row mb-4">
+                            <div class="col-md-3">
+                                <div class=" p-3 border rounded-3 ">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon-box lg bg-primary text-primary bg-opacity-10 rounded-4 me-3">
+                                            <i class="ri-user-line fs-2"></i>
+                                        </div>
+                                        <div>
+                                            <h2 class="mb-0">42</h2>
+                                            <h5 class="card-title">Patients actuels</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-end justify-content-between mt-1">
+                                        <a class="text-primary" href="javascript:void(0);">
+                                            <span>Occupation</span>
+                                            <i class="ri-arrow-right-line ms-1"></i>
+                                        </a>
+                                        <div class="text-end">
+                                            <p class="mb-0 text-primary">+30%</p>
+                                            <span class="badge bg-primary-subtle text-primary small">this month</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sorties aujourd'hui -->
+                            <div class="col-md-3">
+                                <div class=" p-3 border rounded-3 ">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon-box lg bg-success text-success bg-opacity-10 rounded-4 me-3">
+                                            <i class="ri-user-line fs-2"></i>
+                                        </div>
+                                        <div>
+                                            <h2 class="mb-0">42</h2>
+                                            <h5 class="card-title">Sorties aujourd'hui</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-end justify-content-between mt-1">
+                                        <a class="text-primary" href="javascript:void(0);">
+                                            <span>Dernier stats</span>
+                                            <i class="ri-arrow-right-line ms-1"></i>
+                                        </a>
+                                        <div class="text-end">
+                                            <p class="mb-0 text-primary">+15%</p>
+                                            <span class="badge bg-warning-subtle text-warning small">Lits</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Transferts en cours -->
+                            <div class="col-md-3">
+                                <div class=" p-3 border rounded-3 ">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon-box lg bg-warning text-warning bg-opacity-10 rounded-4 me-3">
+                                            <i class="ri-share-forward-2-fill fs-2"></i>
+                                        </div>
+                                        <div>
+                                            <h2 class="mb-0">42</h2>
+                                            <h5 class="card-title">Transferts en cours</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-end justify-content-between mt-1">
+                                        <a class="text-primary" href="javascript:void(0);">
+                                            <span>Transferts en cours</span>
+                                            <i class="ri-arrow-right-line ms-1"></i>
+                                        </a>
+                                        <div class="text-end">
+                                            <p class="mb-0 text-primary">+30%</p>
+                                            <span class="badge bg-warning-subtle text-warning small"> 2 urgences</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Moyenne de jour utilise -->
+                            <div class="col-md-3">
+                                <div class=" p-3 border rounded-3 ">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon-box lg bg-info text-info bg-opacity-10 rounded-4 me-3">
+                                            <i class="ri-alarm-line fs-2"></i>
+                                        </div>
+                                        <div>
+                                            <h2 class="mb-0">4.2j</h2>
+                                            <h5 class="card-title">Moyenne de séjour</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-end justify-content-between mt-1">
+                                        <a class="text-primary" href="javascript:void(0);">
+                                            <span>Transferts en cours</span>
+                                            <i class="ri-arrow-right-line ms-1"></i>
+                                        </a>
+                                        <div class="text-end">
+                                            <p class="mb-0 text-primary"> -0.5j</p>
+                                            <span class="badge bg-warning-subtle text-warning small"> semaine dernière</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,23 +134,11 @@
         <div class="card shadow-sm">
             <div class="card-header bg-white d-flex flex-wrap justify-content-between align-items-center">
                 <h5 class="mb-0">Liste des patients hospitalisés</h5>
-                <div class="d-flex">
-                    <div class="input-group me-2" style="width: 250px;">
-                        <span class="input-group-text bg-transparent"><i class="ri-search-line"></i></span>
-                        <input type="text" class="form-control" placeholder="Rechercher...">
-                    </div>
-                    <select class="form-select" style="width: 150px;">
-                        <option>Tous services</option>
-                        <option>Cardiologie</option>
-                        <option>Chirurgie</option>
-                        <option>Pédiatrie</option>
-                    </select>
-                </div>
             </div>
-            <div class="card-body p-0">
+            <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-hover mb-0">
-                        <thead class="table-light">
+                    <table id="basicExample" class="table table-hover mb-0">
+                        <thead>
                             <tr>
                                 <th>Patient</th>
                                 <th>Chambre</th>
@@ -120,20 +181,6 @@
                     </table>
                 </div>
             </div>
-            <div class="card-footer bg-white">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>Affichage 1-10 sur 42 patients</div>
-                    <nav>
-                        <ul class="pagination mb-0">
-                            <li class="page-item disabled"><a class="page-link" href="#">Précédent</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Suivant</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
         </div>
 
         <!-- Section infos complémentaires (peut être cachée/déployée) -->
@@ -161,7 +208,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
 
 

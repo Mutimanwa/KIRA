@@ -492,7 +492,7 @@
             <!-- Chambres et Lits -->
             <div class="card shadow-sm mb-4" id="chambres">
                 <div class="card-header bg-secondary bg-opacity-10 d-flex justify-content-between align-items-center">
-                    <h5 class="card-title text-secondary mb-0">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-hotel-bed-line me-2"></i>
                         6. Chambres et Lits
                     </h5>

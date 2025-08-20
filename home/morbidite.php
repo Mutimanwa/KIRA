@@ -4,12 +4,12 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-danger bg-opacity-10 d-flex justify-content-between align-items-center">
-                    <h5 class="card-title text-danger mb-0">
+                <div class="card-header bg-primary bg-opacity-10 d-flex justify-content-between align-items-center">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-pulse-line me-2"></i>
                         Surveillance de la morbidité
                     </h5>
-                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#addCaseModal">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCaseModal">
                         <i class="ri-add-line me-1"></i>
                         Ajouter un nouveau cas
                     </button>
@@ -18,7 +18,7 @@
                     <div class="row g-3">
                         <div class="col-sm-6 col-md-6 col-xl-3">
                             <div class="d-flex align-items-center p-3 border rounded-3">
-                                <div class="icon-box lg bg-danger bg-opacity-10 text-danger rounded-4 me-3">
+                                <div class="icon-box lg bg-primary bg-opacity-10 text-primary rounded-4 me-3">
                                     <i class="ri-list-check-2 fs-3"></i>
                                 </div>
                                 <div>
@@ -69,8 +69,8 @@
     <div class="row mt-3">
         <div class="col-12">
             <div class="card shadow-sm mb-4">
-                <div class="card-header bg-danger bg-opacity-10">
-                    <h5 class="card-title text-danger mb-0">
+                <div class="card-header bg-primary bg-opacity-10">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-bar-chart-fill me-2"></i>
                         Tendance des cas de morbidité par mois
                     </h5>
@@ -88,8 +88,8 @@
     <div class="row mt-3">
         <div class="col-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-danger bg-opacity-10">
-                    <h5 class="card-title text-danger mb-0">
+                <div class="card-header bg-primary bg-opacity-10">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-file-list-3-line me-2"></i>
                         Détails des cas de morbidité
                     </h5>
@@ -112,7 +112,7 @@
                                     <td>Jane Doe</td>
                                     <td>Diabète</td>
                                     <td>18/08/2025</td>
-                                    <td><span class="badge bg-danger">Critique</span></td>
+                                    <td><span class="badge bg-primary">Critique</span></td>
                                     <td>Endocrinologie</td>
                                     <td>
                                         <div class="d-inline-flex gap-1">
@@ -181,7 +181,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Annuler</button>
-                <button type="button" class="btn btn-danger">Enregistrer</button>
+                <button type="button" class="btn btn-primary">Enregistrer</button>
             </div>
         </div>
     </div>

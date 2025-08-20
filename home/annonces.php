@@ -4,12 +4,12 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-secondary bg-opacity-10 d-flex justify-content-between align-items-center">
-                    <h5 class="card-title text-secondary mb-0">
+                <div class="card-header bg-primary bg-opacity-10 d-flex justify-content-between align-items-center">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-megaphone-line me-2"></i>
                         Tableau d'annonces
                     </h5>
-                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addAnnonceModal">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAnnonceModal">
                         <i class="ri-add-line me-1"></i>
                         Créer une annonce
                     </button>

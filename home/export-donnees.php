@@ -4,12 +4,12 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-warning bg-opacity-10 d-flex justify-content-between align-items-center">
-                    <h5 class="card-title text-warning mb-0">
+                <div class="card-header bg-primary bg-opacity-10 d-flex justify-content-between align-items-center">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-file-download-line me-2"></i>
                         Exportation des données
                     </h5>
-                    <button class="btn btn-warning">
+                    <button class="btn btn-primary">
                         <i class="ri-download-line me-1"></i>
                         Lancer l'exportation
                     </button>
@@ -60,15 +60,15 @@
     <div class="row mt-3">
         <div class="col-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-warning bg-opacity-10">
-                    <h5 class="card-title text-warning mb-0">
+                <div class="card-header bg-primary bg-opacity-10">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-history-line me-2"></i>
                         Historique des exportations
                     </h5>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-hover align-middle m-0" id="export-history-table">
+                        <table class="table table-hover align-middle m-0" id="basicExample">
                             <thead>
                                 <tr>
                                     <th>Date d'exportation</th>
@@ -99,7 +99,7 @@
                                     <td>Journal d'audit</td>
                                     <td>CSV</td>
                                     <td>52 Ko</td>
-                                    <td><span class="badge bg-warning text-dark">En cours...</span></td>
+                                    <td><span class="badge bg-primary ">En cours...</span></td>
                                     <td>
                                         <div class="d-inline-flex gap-1">
                                             <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Annuler">

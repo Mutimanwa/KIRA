@@ -110,9 +110,26 @@ jQuery(function ($) {
 });
 
 // Loading
-$(function () {
-  $("#loading-wrapper").fadeOut(2000);
+$(window).on("load", function () {
+  // Vérifie si déjà affiché pendant la session
+  if (!sessionStorage.getItem("tunzaLoaderShown")) {
+    $("#kira-loader").fadeOut("slow", function () {
+      sessionStorage.setItem("tunzaLoaderShown", "true");
+    });
+  } else {
+    $("#kira-loader").hide(); 
+  }
 });
+
+
+// window.KiraLoader = {
+//   show(){ document.getElementById('kira-loader')?.classList.remove('hidden'); },
+//   hide(){ document.getElementById('kira-loader')?.classList.add('hidden'); }
+// };
+// // Masquer après le premier rendu si besoin
+// window.addEventListener('load', () => {
+//   KiraLoader.hide(); // décommente pour l’auto-hide à la fin du chargement
+// });
 
 $(function () {
   $(".day-sorting .btn").on("click", function () {
