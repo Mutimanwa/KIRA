@@ -4,61 +4,50 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-danger bg-opacity-10 d-flex justify-content-between align-items-center">
+                <div class="card-header bg-danger bg-opacity-10">
                     <h5 class="card-title text-danger mb-0">
-                        <i class="ri-heart-pulse-line me-2"></i>
-                        Banque de Sang
+                        <i class="ri-search-line me-2"></i>
+                        Recherche de Poches de Sang
                     </h5>
-                    <div class="d-flex gap-2">
-                        <a href="donneur-sang.php" class="btn btn-outline-danger">
-                            <i class="ri-user-add-line me-1"></i>
-                            Gérer les donneurs
-                        </a>
-                        <a href="recherche-poche-sang.php" class="btn btn-danger">
-                            <i class="ri-search-line me-1"></i>
-                            Rechercher une poche
-                        </a>
-                    </div>
                 </div>
                 <div class="card-body">
                     <p class="text-muted mb-4">
-                        Suivi en temps réel de la disponibilité des poches de sang.
+                        Trouvez rapidement les poches de sang correspondantes à vos critères.
                     </p>
-                    <div class="row g-3">
-                        <div class="col-sm-6 col-md-6 col-xl-4">
-                            <div class="d-flex align-items-center p-3 border rounded-3">
-                                <div class="icon-box lg bg-success bg-opacity-10 text-success rounded-4 me-3">
-                                    <i class="ri-drop-line fs-3"></i>
-                                </div>
-                                <div>
-                                    <span class="text-muted">Poches disponibles</span>
-                                    <h4 class="mb-0">850</h4>
-                                </div>
-                            </div>
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="searchBloodGroup" class="form-label">Groupe sanguin</label>
+                            <select class="form-select" id="searchBloodGroup">
+                                <option>Tous</option>
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-xl-4">
-                            <div class="d-flex align-items-center p-3 border rounded-3">
-                                <div class="icon-box lg bg-warning bg-opacity-10 text-warning rounded-4 me-3">
-                                    <i class="ri-alert-line fs-3"></i>
-                                </div>
-                                <div>
-                                    <span class="text-muted">Faible stock (7 jours)</span>
-                                    <h4 class="mb-0">15</h4>
-                                </div>
-                            </div>
+                        <div class="col-md-4">
+                            <label for="searchRhFactor" class="form-label">Facteur Rh</label>
+                            <select class="form-select" id="searchRhFactor">
+                                <option>Tous</option>
+                                <option>Rh+</option>
+                                <option>Rh-</option>
+                            </select>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-xl-4">
-                            <div class="d-flex align-items-center p-3 border rounded-3">
-                                <div class="icon-box lg bg-info bg-opacity-10 text-info rounded-4 me-3">
-                                    <i class="ri-calendar-line fs-3"></i>
-                                </div>
-                                <div>
-                                    <span class="text-muted">Dons enregistrés ce mois-ci</span>
-                                    <h4 class="mb-0">210</h4>
-                                </div>
-                            </div>
+                        <div class="col-md-4">
+                            <label for="searchDate" class="form-label">Date de prélèvement</label>
+                            <input type="date" class="form-control" id="searchDate">
                         </div>
-                    </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-danger">
+                                <i class="ri-search-line me-1"></i>
+                                Rechercher
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -70,7 +59,7 @@
                 <div class="card-header bg-danger bg-opacity-10">
                     <h5 class="card-title text-danger mb-0">
                         <i class="ri-list-check-2 me-2"></i>
-                        Poches de sang à usage imminent
+                        Résultats de la recherche
                     </h5>
                 </div>
                 <div class="card-body">
@@ -95,26 +84,6 @@
                                     <td><span class="badge bg-success">Disponible</span></td>
                                     <td>
                                         <div class="d-inline-flex gap-1">
-                                            <button class="btn btn-outline-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
-                                                <i class="ri-eye-line"></i>
-                                            </button>
-                                            <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#transfuseModal" title="Transfuser">
-                                                <i class="ri-exchange-line"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>P-20250818-005</td>
-                                    <td>O-</td>
-                                    <td>18/08/2025</td>
-                                    <td>18/10/2025</td>
-                                    <td><span class="badge bg-danger">Faible stock</span></td>
-                                    <td>
-                                        <div class="d-inline-flex gap-1">
-                                            <button class="btn btn-outline-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Détails">
-                                                <i class="ri-eye-line"></i>
-                                            </button>
                                             <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#transfuseModal" title="Transfuser">
                                                 <i class="ri-exchange-line"></i>
                                             </button>
