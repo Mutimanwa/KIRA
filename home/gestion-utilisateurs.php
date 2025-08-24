@@ -13,9 +13,9 @@
               <i class="ri-folder-2-line me-2"></i> Gestion utilisateur
             </h5>
             <div>
-              <button class="btn btn-sm btn-primary">
+              <a href="add-utilisateur.php" class="btn btn-sm btn-primary">
                 <i class="ri-add-line me-1"></i> Nouvel utilisateur
-              </button>
+              </a>
             </div>
           </div>
         </div>

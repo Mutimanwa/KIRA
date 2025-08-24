@@ -5,8 +5,8 @@
         <!-- En-tête avec indicateurs clés -->
         <div class="col-12">
             <div class="card shadow-sm border-0">
-                <div class="card-header bg-warning bg-opacity-10 border-0 d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0 text-warning">
+                <div class="card-header bg-primary bg-opacity-10 border-0 d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0 text-primary">
                         <i class="ri-shield-check-line me-2"></i> Validation des Prescriptions
                     </h5>
                 </div>
@@ -89,7 +89,7 @@
                                     <td>Cardiologie</td>
                                     <td>
                                         <div class="d-flex justify-content-end">
-                                            <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#validatePrescriptionModal">
+                                            <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#validatePrescriptionModal">
                                                 <i class="ri-check-line me-1"></i> Valider
                                             </button>
                                         </div>
@@ -103,7 +103,7 @@
                                     <td>Pédiatrie</td>
                                     <td>
                                         <div class="d-flex justify-content-end">
-                                            <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#validatePrescriptionModal">
+                                            <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#validatePrescriptionModal">
                                                 <i class="ri-check-line me-1"></i> Valider
                                             </button>
                                         </div>
@@ -120,9 +120,9 @@
 
 <!-- Modal de Validation -->
 <div class="modal fade" id="validatePrescriptionModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header bg-warning text-dark">
+            <div class="modal-header text-dark">
                 <h5 class="modal-title"><i class="ri-shield-check-line me-2"></i> Validation de la Prescription #PRES-2023-0450</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -172,7 +172,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#rejectPrescriptionModal">Rejeter</button>
-                <button type="button" class="btn btn-success"><i class="ri-check-double-line me-1"></i> Valider et délivrer</button>
+                <button type="button" class="btn btn-primary"><i class="ri-check-double-line me-1"></i> Valider et délivrer</button>
             </div>
         </div>
     </div>
@@ -182,8 +182,8 @@
 <div class="modal fade" id="rejectPrescriptionModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title"><i class="ri-close-circle-line me-2"></i> Rejeter la Prescription</h5>
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="ri-close-circle-line me-2 text-danger"></i> Rejeter la Prescription</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">

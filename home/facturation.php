@@ -1,7 +1,25 @@
 <?php include 'header.php' ?>
           <!-- App body starts -->
           <div class="app-body">
+          <div class="row mb-3">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header bg-primary bg-opacity-10 d-flex justify-content-between">
+                  <h5 class="card-title text-primary">
+                    <i class="ri-secure-payment-line"></i>
+                    Facturation
+                  </h5>
+                  <a href="nouvelle-facture.php" class="btn btn-primary">
+                    <i class="ri-add-line"></i>
+                    Nouvelle facture
+                  </a>
+                </div>
+                <div class="card-body">
 
+                </div>
+              </div>
+            </div>
+          </div>
             <!-- Row start -->
             <div class="row">
               <div class="col-12">
@@ -27,8 +45,8 @@
                               <th>Patient</th>
                               <th>Created Date</th>
                               <th>Due Date</th>
-                              <th>Status</th>
                               <th>Money Spent</th>
+                              <th>Status</th>
                               <th>Actions</th>
                             </tr>
                           </thead>
@@ -50,9 +68,11 @@
                                 <span class="badge bg-success">Paid</span>
                               </td>
                               <td>
-                                <button class="btn btn-primary btn-sm">
-                                  Send Mail
-                                </button>
+                                <div>
+                                    <a href="facture-details.php" class="btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-emplacement="top" title="Voir les details de la facture">
+                                      <i class="ri-eye-line"></i>
+                                    </a>
+                                </div>
                               </td>
                             </tr>
                             <tr>

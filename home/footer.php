@@ -74,6 +74,10 @@
 <script src="../assets/vendor/calendar/custom/appointments-calendar.js"></script>
 <script src="../assets/vendor/calendar/custom/planing-hospitalisation.js"></script>
 
+    <!-- Quill Editor JS -->
+    <script src="../assets/vendor/quill/quill.min.js"></script>
+    <script src="../assets/vendor/quill/custom.js"></script>
+
 
 </body>
 

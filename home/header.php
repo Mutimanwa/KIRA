@@ -47,6 +47,8 @@
 
   <link rel="stylesheet" href="../assets/vendor/owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="../assets/vendor/owlcarousel/owl.theme.css">
+    <!-- Quill Editor -->
+    <link rel="stylesheet" href="../assets/vendor/quill/quill.core.css">
 </head>
 
 <body>
@@ -304,8 +306,8 @@ document.onreadystatechange = function () {
               <ul class="treeview-menu">
                 <li><a href="patients-list.php">Liste des patients</a></li>
                 <li><a href="admission.php">Admission</a></li>
-                <li><a href="dossier-medical.php">Dossier médical complet</a></li>
-                <li><a href="historique-patient.php">Historique</a></li>
+                <!-- <li><a href="dossier-medical.php">Dossier médical complet</a></li> -->
+                <!-- <li><a href="historique-patient.php">Historique</a></li> -->
                 <li><a href="recherche-patient.php">Recherche avancée</a></li>
               </ul>
             </li>

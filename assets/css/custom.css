@@ -1,73 +1,15 @@
-/* loader */
-:root{
-  --kira-primary: #0ea5e9;   /* bleu santé */
-  --kira-accent:  #22c55e;   /* vert soin */
-  --kira-dark:    #0b1220;
-  --kira-glow:    0 0 30px rgba(14,165,233,.45);
-}
 
-/* ==== Overlay plein écran ==== */
-.kira-loader{
-  position: fixed; inset: 0;
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  background: radial-gradient(1200px 600px at 50% 30%, rgba(14,165,233,.08), transparent),
-              linear-gradient(180deg, rgba(11,18,32,.96), rgba(11,18,32,.96));
+#page-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #22d3ee);
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.6);
   z-index: 9999;
-  backdrop-filter: blur(6px);
+  transition: width 0.4s ease;
 }
-.kira-hint{
-  margin-top: 18px; color:#cbd5e1; font-size: .95rem; letter-spacing:.02em;
-}
-
-/* ==== Spinner principal ==== */
-.kira-spinner{
-  width: 120px; height: 120px; border-radius: 50%;
-  position: relative; display:grid; place-items:center;
-  box-shadow: var(--kira-glow);
-  /* anneau extérieur animé */
-  background:
-    conic-gradient(from 0deg, var(--kira-primary), var(--kira-accent), var(--kira-primary));
-  -webkit-mask: radial-gradient(farthest-side, transparent 58%, #000 60%);
-          mask: radial-gradient(farthest-side, transparent 58%, #000 60%);
-  animation: spin 1.2s linear infinite;
-}
-
-/* halo doux (pseudo-élément) */
-.kira-spinner::before{
-  content:"";
-  position:absolute; inset:-12px; border-radius:50%;
-  background: radial-gradient(closest-side, rgba(34,197,94,.22), transparent 70%);
-  filter: blur(4px);
-}
-
-/* coeur/pulse central + marque */
-.kira-brand{
-  position:absolute; inset: 0; display:grid; place-items:center;
-  font: 700 18px/1.1 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color:#e2f7ff; text-shadow: 0 2px 8px rgba(14,165,233,.45);
-  letter-spacing:.12em;
-}
-.kira-brand::after{
-  content:"";
-  position:absolute; width: 18px; height: 18px; border-radius:50%;
-  background: radial-gradient(circle at 30% 30%, #e0fff5, var(--kira-accent));
-  box-shadow: 0 0 18px rgba(34,197,94,.55), 0 0 36px rgba(14,165,233,.35) inset;
-  animation: pulse 1.6s ease-in-out infinite;
-  z-index:-1;
-}
-
-@keyframes spin { to { transform: rotate(360deg); } }
-@keyframes pulse {
-  0%,100% { transform: scale(0.9); opacity:.85; }
-  50%     { transform: scale(1.15); opacity:1;  }
-}
-
-/* Accessibilité : moins d’animations si demandé */
-@media (prefers-reduced-motion: reduce){
-  .kira-spinner{ animation: none; }
-  .kira-brand::after{ animation: none; }
-}
-
 
 /* Styles de base */
 .messaging-wrapper {

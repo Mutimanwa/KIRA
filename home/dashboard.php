@@ -11,7 +11,7 @@ include 'header.php';
                   <div class="card-body">
                     <div class="py-4 px-3 text-white">
                       <h6>Good Morning,</h6>
-                      <h2>Mr. Calvin Dev</h2>
+                      <h2>Calvin Dev</h2>
                       <h5>Your schedule today.</h5>
                       <div class="mt-4 row g-3">
                         <div class="col-xl-3 d-flex align-items-center">

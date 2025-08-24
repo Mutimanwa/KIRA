@@ -4,12 +4,12 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-warning bg-opacity-10 d-flex justify-content-between align-items-center">
-                    <h5 class="card-title text-warning mb-0">
+                <div class="card-header bg-primary bg-opacity-10 d-flex justify-content-between align-items-center">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-shopping-cart-line me-2"></i>
                         Gestion des Dispensations
                     </h5>
-                    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addDispensationModal">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addDispensationModal">
                         <i class="ri-add-line me-1"></i>
                         Enregistrer une dispensation
                     </button>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="col-sm-6 col-md-6 col-xl-4">
                             <div class="d-flex align-items-center p-3 border rounded-3">
-                                <div class="icon-box lg bg-warning bg-opacity-10 text-warning rounded-4 me-3">
+                                <div class="icon-box lg bg-primary bg-opacity-10 text-primary rounded-4 me-3">
                                     <i class="ri-file-list-3-line fs-3"></i>
                                 </div>
                                 <div>
@@ -61,8 +61,8 @@
     <div class="row mt-3">
         <div class="col-12">
             <div class="card shadow-sm">
-                <div class="card-header bg-warning bg-opacity-10">
-                    <h5 class="card-title text-warning mb-0">
+                <div class="card-header bg-primary bg-opacity-10">
+                    <h5 class="card-title text-primary mb-0">
                         <i class="ri-history-line me-2"></i>
                         Historique des Dispensations
                     </h5>
@@ -149,7 +149,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Annuler</button>
-                <button type="button" class="btn btn-warning">Enregistrer la dispensation</button>
+                <button type="button" class="btn btn-primary">Enregistrer la dispensation</button>
             </div>
         </div>
     </div>
